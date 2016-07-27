@@ -4,8 +4,8 @@
 // // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
 /**
- * The JS Buy SDK is a lightweight library that allows you to build ecommerce into any website. 
- * It is based on Shopify’s API and provides the ability to retrieve products and collections from your shop, 
+ * The JS Buy SDK is a lightweight library that allows you to build ecommerce into any website.
+ * It is based on Shopify’s API and provides the ability to retrieve products and collections from your shop,
  * add products to a cart, and checkout.
  */
 declare namespace ShopifyBuy {
@@ -15,24 +15,16 @@ declare namespace ShopifyBuy {
     export function buildClient(configAttrs : Shopify.Config) : Shopify.ShopClient
 
     /**
-     * Internal Image description 
+     * Internal Image description
      */
     interface Image {
         id : string|number
         src : string
         position : number
         product_id : string
-        variant_ids : Array<string>    
+        variant_ids : Array<string>
         created_at : string
         updated_at : string
-    }
-
-    /**
-     * Cart item, that should be added to the card
-     */
-    interface CartModelItem {
-        variant : Shopify.ProductVariantModel
-        quantity : number
     }
 
     /**
@@ -53,7 +45,7 @@ declare namespace ShopifyBuy {
     export namespace Shopify {
 
         /**
-         * Base Shopify Client config object 
+         * Base Shopify Client config object
          */
         interface Config
         {
@@ -62,8 +54,8 @@ declare namespace ShopifyBuy {
              */
             apiKey: string
 
-            /** The app whose listings the client will be using. 
-             * If you are just modifying a buy button, the buy-button's app id is. 
+            /** The app whose listings the client will be using.
+             * If you are just modifying a buy button, the buy-button's app id is.
              * Otherwise, obtain the app id of the app you're modifying or extending.
              */
             appId: string
@@ -73,12 +65,20 @@ declare namespace ShopifyBuy {
         }
 
         /**
+         * Cart item, that should be added to the card
+         */
+        interface CartModelItem {
+            variant : Shopify.ProductVariantModel
+            quantity : number
+        }
+
+        /**
          * Shopify-Buy-SDK Client to handle products and cart
          */
         class ShopClient {
 
             /**
-             * Config data to be used throughout all API interaction 
+             * Config data to be used throughout all API interaction
              */
             constructor( config? : Config )
             /**
@@ -114,7 +114,7 @@ declare namespace ShopifyBuy {
             /**
              * Fetches a list of products matching a specified query.
              */
-            fetchQueryProducts(query? : any) : Promise<Array<ProductModel>>    
+            fetchQueryProducts(query? : any) : Promise<Array<ProductModel>>
 
         }
 
@@ -247,7 +247,7 @@ declare namespace ShopifyBuy {
              */
             image : Image
 
-            /** 
+            /**
              * Option values associated with this variant, ex {name: "color", value: "Blue"}
             */
             optionValues : Array<Option>
@@ -286,8 +286,8 @@ declare namespace ShopifyBuy {
             name: string
 
             /**
-             * get/set selected option value (ex. "Large"). 
-             * Setting this will update the selected value on the model. 
+             * get/set selected option value (ex. "Large").
+             * Setting this will update the selected value on the model.
              * Throws {Error} if setting selected to value that does not exist for option
              */
             selected : string
@@ -296,10 +296,10 @@ declare namespace ShopifyBuy {
              * possible values for selection
              */
             values : Array<any>
-            
+
         }
-        
-    }    
+
+    }
 
 }
 
