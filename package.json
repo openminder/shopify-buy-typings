@@ -1,16 +1,16 @@
 {
-  "name": "spotify-buy-typings",
+  "name": "shopify-buy-typings",
   "version": "0.0.1",
   "description": "Type definitions for Spotify Buy Javascript SDK",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/openminder/spotify-buy-typings.git"
+    "url": "git+https://github.com/openminder/shopify-buy-typings.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/openminder/spotify-buy-typings/issues"
+    "url": "https://github.com/openminder/shopify-buy-typings/issues"
   },
-  "homepage": "https://github.com/openminder/spotify-buy-typings",
+  "homepage": "https://github.com/openminder/shopify-buy-typings",
   "devDependencies": {
     "typescript": "^1.8.10",
     "typings": "^1.3.2"
