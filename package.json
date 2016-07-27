@@ -1,7 +1,7 @@
 {
   "name": "shopify-buy-typings",
   "version": "0.0.1",
-  "description": "Type definitions for Spotify Buy Javascript SDK",
+  "description": "Type definitions for Shopify Buy Javascript SDK",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/openminder/shopify-buy-typings.git"

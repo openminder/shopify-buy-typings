@@ -1,5 +1,5 @@
 # shopify-buy-typings
-Type definitions for Spotify Buy Javascript SDK. Tested with version 0.2.1.
+Type definitions for Shopify Buy Javascript SDK. Tested with version 0.2.1.
 
 ## How to use
 ``` shell
