@@ -1,5 +1,6 @@
 # shopify-buy-typings
 Type definitions for Shopify Buy Javascript SDK. Tested with version 0.2.1.
+Link to Shopify Buy SDK API: http://shopify.github.io/js-buy-sdk/api/
 
 ## How to use
 ``` shell
