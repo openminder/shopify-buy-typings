@@ -72,6 +72,66 @@ declare namespace ShopifyBuy {
             quantity : number
         }
 
+        class CartLineItem extends BaseModel {
+          constructor()
+
+          /**
+           * Line item unique ID
+           */
+          id : string|number
+
+          /**
+           * Images associated with product.
+           */
+          image : Image
+
+          /**
+           * Product title
+           */
+          title: string
+
+          /**
+           * ID of selected variant
+           */
+          variant_id: string|number
+
+          /**
+           * Title of selected variant
+           */
+          variant_title: string
+
+          /**
+           * Number of selected items
+           */
+          quantity : number
+
+          /**
+           * Variant weight in grams
+           */
+          grams: number
+
+          /**
+           * ID of selected product
+           */
+          product_id: string|number
+
+          /**
+           * Price of variant, formatted as currency
+           */
+          price: string
+
+          /**
+           * Compare at price for variant formatted as currency.
+           */
+          compare_at_price: string
+
+          /**
+           * Calculated price for the number of variant in card
+           */
+          line_price: string
+
+        }
+
         /**
          * Shopify-Buy-SDK Client to handle products and cart
          */
@@ -138,7 +198,7 @@ declare namespace ShopifyBuy {
             /**
              * Get current line items for cart
              */
-            lineItems : Array<CartModelItem>
+            lineItems : Array<CartLineItem>
 
             /**
              * Get current subtotal price for all line items
