@@ -1,6 +1,6 @@
 {
   "name": "shopify-buy-typings",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Type definitions for Shopify Buy Javascript SDK",
   "repository": {
     "type": "git",
