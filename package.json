@@ -7,6 +7,11 @@
     "url": "git+https://github.com/openminder/shopify-buy-typings.git"
   },
   "license": "MIT",
+  "author": {
+    "name" :"Martin Koehn",
+    "email" : "martin.koehn@googlemail.com",
+    "url" : ""
+  },
   "bugs": {
     "url": "https://github.com/openminder/shopify-buy-typings/issues"
   },
