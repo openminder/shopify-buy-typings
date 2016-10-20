@@ -1,7 +1,7 @@
-// // Type definitions for shopify-buy
-// // Project: Shopify Buy Client
-// // Definitions by: Martin Köhn <[https://github.com/openminder]>
-// // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// Type definitions for shopify-buy
+// Project: http://shopify.github.io/js-buy-sdk/api/
+// Definitions by: Martin Köhn <https://github.com/openminder>
+// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
 /**
  * The JS Buy SDK is a lightweight library that allows you to build ecommerce into any website.
@@ -39,6 +39,8 @@ declare namespace ShopifyBuy {
         shopClient: any
     }
 
+    var NO_IMAGE_URI : string;
+
     /**
      * This namespace contains all globally accessible classes
      */
@@ -61,7 +63,7 @@ declare namespace ShopifyBuy {
             appId: string
 
             /** You shop's myshopify.com domain. */
-            domain: string
+            myShopifyDomain: string
         }
 
         /**
@@ -204,6 +206,11 @@ declare namespace ShopifyBuy {
              * Get current subtotal price for all line items
              */
             subtotal: string
+
+            /**
+             * Gets the sum quantity of each line item
+             */
+            lineItemCount : number
 
             /**
              * Add items to cart. Updates cart's lineItems
